@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>例3-2 複数の条件文で値を調べる</title>
+    <script type="text/javascript">
+    //<![CDATA[
+    var prefCode = '鹿児島';
+    
+    if (prefCode == '長野'){
+        taxPercengage = 9.5;
+    } else if(prefCode == '福井'){
+        taxPercengage = 6.5;
+    } else if(prefCode == '熊本'){
+        taxPercengage = 7.0;
+    } else{
+        taxPercengage = 8.0;
+    }
+        
+    alert(taxPercengage);
+    //]]>
+    </script>
+</head>
+    
+<body>
+    <p>都道府県を選択するフォームがここにあると仮定</p>
+</body>
+    
+</html>

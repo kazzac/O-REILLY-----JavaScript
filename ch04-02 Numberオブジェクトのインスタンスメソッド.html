@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>例4-2 Numberオブジェクトのインスタンスメソッド</title>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    function numbers(){
+        //Numberのメソッド
+        var newNumber = new Number(34.8896);
+        
+        document.writeln(newNumber.toExponential(3) + "</br>");//指数表記（小数点以下3桁）
+        document.writeln(newNumber.toPrecision(3) + "</br>");//指定の有効桁数で表現
+        document.writeln(newNumber.toFixed(6) + "</br>");//固定小数点表記（小数点以下6桁）
+        
+        var newValue = newNumber.valueOf();
+        
+        document.writeln(newValue.toString(2) + "</br>");//2進数表記の文字列
+        document.writeln(newValue.toString(8) + "</br>");//8進数表記の文字列
+        document.writeln(newValue.toString(10) + "</br>");//10進数表記の文字列
+        document.writeln(newValue.toString(16) + "</br>");//16進数表記の文字列
+        
+    }
+    //]]>
+    </script>
+
+</head>
+    
+<body onload="numbers();">
+    <p>...</p>
+</body>
+    
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>例4-5 splitを使って文字列を字句に分割</title>
+</head>
+    
+<body>
+    
+    <script type="text/javascript">
+    //<![CDATA[
+    
+        
+    var inputString = '名=シェリー,姓=パワーズ,出身地=ミズリー州,statement="This is a test,of split"';
+    
+    var arrayTokens = inputString.split(',',3);//コンマの部分で分割して、3つの要素を持つ配列にする
+ 
+    for (var i in arrayTokens){
+        
+        document.writeln(arrayTokens[i] + "<br />");
+        var newTokens = arrayTokens[i].split('=');
+        document.writeln(newTokens[1] + "<br />");
+    }
+        
+    //]]>
+    </script>
+
+</body>
+    
+</html>

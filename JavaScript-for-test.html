@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>TITLE</title>
+    <script type="text/javascript">
+    //<![CDATA[
+        var re = new RegExp("JS*","ig");
+        var str = "cfdsJSSs *(&YJsjs 888JS";
+        
+        document.writeln("<p>");
+        document.writeln('検索対象文字列：' + str + '<br />');
+        document.writeln('検索パターン：' + "JS*" + '<br /><br />');
+        
+        var resultArray = re.exec(str);
+        
+        document.writeln(resultArray);
+        
+        while(resultArray){
+            
+            document.writeln("現在のresultArrayは" + resultArray + "<br />");
+        
+            document.writeln('"' + resultArray[0] + '"にマッチしました。');
+            document.writeln("次は" + (re.lastIndex+1) + "文字目から検索します。<br />");
+            resultArray = re.exec(str);
+        }
+
+        document.writeln("</p>");
+        
+        
+    //]]>
+    </script>
+</head>
+    
+<body>
+</body>
+    
+</html>

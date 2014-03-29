@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>例3-3 switch文で式を複数の値と比較する</title>
+    <script type="text/javascript">
+    //<![CDATA[
+    var prefCode = '鹿児島';
+    var taxPercengage = 0.0;
+        
+    switch (prefCode){
+        case '愛知':
+            taxPercengage = 5.5;
+            break;
+        case '長野':
+            taxPercengage = 9.5;
+            break;
+        case '福井':
+        case '栃木':
+        case '青森':
+            taxPercengage = 6.5;
+            break;
+        case '熊本':
+            taxPercengage = 7.0;
+            break;
+        default:
+            taxPercengage = 8.0;
+        }
+        
+    alert(prefCode + "の税率は、" + taxPercengage +"％です。");
+    //]]>
+    </script>
+</head>
+    
+<body>
+    <p>都道府県コードを選択するフォームがここにあると仮定</p>
+</body>
+    
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+    <title>例3-1 if分 -- 字下げで入れ子の条件分を読みやすくする</title>
+    <script type="text/javascript">
+    //<![CDATA[
+    var numberChoice = 2;
+    var prefChoice = '大阪';
+    var genderChoice = '男';
+        
+    if (numberChoice == 1){
+        alert("1を選択しましたね。");
+        
+        if (prefChoice == '長野'){
+            alert("1を選択して、かつ長野を選択しましたね。");
+            
+            if(genderChoice == '男'){
+                alert("1を選択して、かつ長野を選択して、かつ男を選択しましたね。");
+            
+            }
+        
+        }
+    
+    
+    }
+    //]]>
+    </script>
+</head>
+    
+<body>
+</body>
+    
+</html>
